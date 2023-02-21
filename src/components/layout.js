@@ -1,9 +1,14 @@
-async function Layout(props) {
+import React from 'react';
+
+import NavBar from "./NavBar.js"
+import Footer from "./Footer.js"
+
+export default function Layout({childern}) {
     return (
         <div>
             <NavBar/>
             <main>
-                {props.childern}
+                {childern}
             </main>
             <Footer/>
         </div>
