@@ -4,10 +4,11 @@ import "../styles/homePageStyles.css"
 
 export default function HomePage() {
     return (
-        <div className="container" style={{ color: "green"}}>
-            <div className="mb-5">
-                HomePage
-            </div>
+        <div className="container d-flex justify-content-center" style={{ color: "green"}}>
+            <img 
+            src={require("../images/placeholder-center-img.jpg")}
+            alt="">
+            </img>
         </div>
     );
 }

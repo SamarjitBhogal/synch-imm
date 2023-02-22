@@ -5,7 +5,7 @@ import "../styles/navBarStyles.css"
 
 export default function NavBar() {
   return (
-    <div className="d-flex justify-content-center">
+    <div className="transparent d-flex justify-content-center">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <button
