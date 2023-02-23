@@ -1,6 +1,14 @@
 /* 
     NavBar StyleSheet
-    TODO: Fix Logo showing in collapsable navbar
-            and orientaion of buttons
+
+    why doesn't toggler nav work?
 */
 
+.toggler-nav {
+    outline: none;
+    border: none;
+}
+
+.synch-logo-size {
+    width: 150px;
+}

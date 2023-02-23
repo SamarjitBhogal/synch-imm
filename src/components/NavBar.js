@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import "../styles/navBarStyles.css"
+import "../styles/navBarStyles.css";
 
 export default function NavBar() {
+  window.addEventListener("resize", onResize);
+
+  const [logo, setLogo] = useState(true);
+  const [nav, setNav] = useState(true);
+
+  function onResize() {
+    if (window.innerWidth <= 992) {
+      setLogo(true);
+      setNav(true);
+    } else {
+      setLogo(false);
+      setNav(false);
+    }
+  }
+
+  useEffect(() => {
+    onResize();
+  }, []);
+
   return (
-    <div className="transparent d-flex justify-content-center">
+    <div className="transparent-w container">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <button
-            className="navbar-toggler"
+            className="navbar-toggler toggler-nav"
             type="button"
+            style={{ border: "none", outline: "none" }}
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
@@ -20,40 +40,81 @@ export default function NavBar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse fs-5" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/">
-                  HOME
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/about">
-                  ABOUT US
-                </a>
-              </li>
-            </ul>
-          </div>
-          
+          {logo && (
             <Link to="/">
-              <img src={require("../images/company-logo.jpg")} 
-              style={{ width: "150px" }} 
-              alt="logo">
-              </img>
+              <img
+                className="synch-logo-size"
+                src={require("../images/company-logo.jpg")}
+                alt="logo"
+              ></img>
             </Link>
+          )}
 
-          <div className="collapse navbar-collapse fs-5" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link" href="/contact">
-                  CONTACT US
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/services">SERVICES</a>
-              </li>
-            </ul>
-          </div>
+          {nav && (
+            <div className="collapse navbar-collapse fs-5" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <a className="nav-link" aria-current="page" href="/">
+                    HOME
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/about">
+                    ABOUT US
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/contact">
+                    CONTACT US
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/services">
+                    SERVICES
+                  </a>
+                </li>
+              </ul>
+            </div>
+          )}
+
+          {!logo && !nav && (
+            <div
+              className="collapse navbar-collapse fs-5 justify-content-center"
+              id="navbarNav"
+            >
+              <ul className="navbar-nav">
+                <li className="nav-item p-5">
+                  <a className="nav-link" aria-current="page" href="/">
+                    HOME
+                  </a>
+                </li>
+                <li className="nav-item p-5">
+                  <a className="nav-link" href="/about">
+                    ABOUT US
+                  </a>
+                </li>
+                <li>
+                  <Link to="/">
+                    <img
+                      className="synch-logo-size"
+                      src={require("../images/company-logo.jpg")}
+                      alt="logo"
+                    ></img>
+                  </Link>
+                </li>
+                <li className="nav-item p-5">
+                  <a className="nav-link" href="/contact">
+                    CONTACT US
+                  </a>
+                </li>
+                <li className="nav-itemF p-5">
+                  <a className="nav-link" href="/services">
+                    SERVICES
+                  </a>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </nav>
     </div>

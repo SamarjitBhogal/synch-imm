@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
-.transparent {
+/* white transparent background */
+.transparent-w {
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* company background color */
+.sych-bg-c {
+  background-color: #9D918E;
 }
