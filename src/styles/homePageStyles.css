@@ -1,3 +1,52 @@
-.background-img {
-    
+.header-font {
+    font-family: 'Fjalla One', arial, sans-serif;
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 20%);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.local-text-space {
+    width: 60%;
+}
+
+.local-text-font {
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+.img-staple {
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    position: absolute;
+    right: 40px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 40px;
+}
+
+.img-button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    width: auto;
+    font-weight: 700;
+}
+
+.home-img {
+
 }

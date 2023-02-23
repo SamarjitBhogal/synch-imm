@@ -12,3 +12,8 @@
 .synch-logo-size {
     width: 150px;
 }
+
+.fixed {
+    position: sticky;
+    top: 0;
+}

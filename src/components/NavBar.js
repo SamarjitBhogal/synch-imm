@@ -24,7 +24,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="transparent-w container">
+    <div className="transparent-w container fixed">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <button
@@ -53,22 +53,22 @@ export default function NavBar() {
           {nav && (
             <div className="collapse navbar-collapse fs-5" id="navbarNav">
               <ul className="navbar-nav">
-                <li className="nav-item">
+                <li className="nav-item mb-2">
                   <a className="nav-link" aria-current="page" href="/">
                     HOME
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item mb-2">
                   <a className="nav-link" href="/about">
                     ABOUT US
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item mb-2">
                   <a className="nav-link" href="/contact">
                     CONTACT US
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item mb-2">
                   <a className="nav-link" href="/services">
                     SERVICES
                   </a>
@@ -79,7 +79,7 @@ export default function NavBar() {
 
           {!logo && !nav && (
             <div
-              className="collapse navbar-collapse fs-5 justify-content-center"
+              className="collapse navbar-collapse fs-5 justify-content-center align-items-center"
               id="navbarNav"
             >
               <ul className="navbar-nav">
