@@ -5,22 +5,20 @@ import "../styles/homePageStyles.css";
 export default function HomePage() {
   return (
     <div className="container d-flex justify-content-center align-items-center flex-column mb-3">
-      <div>
+      <div className="container" style={{  }}>
         <img
           src={require("../images/placeholder-center-img.jpg")}
           alt="main"
           style={{
             maxWidth: "100%",
-            height: "auto",
-            backgroundColor: "transparent",
           }}
         ></img>
-        <div className="sych-bg-c img-staple">
+        {/* <div className="sych-bg-c img-staple">
           <h1 className="header-font">LEGAL EXPERTISE YOU CAN RELY ON</h1>
           <button className="img-button" type="button" href="#">
             <span>Half off consultations!</span>
           </button>
-        </div>
+        </div> */}
       </div>
 
       <div className="container d-flex justify-content-center align-items-center flex-column mt-5">

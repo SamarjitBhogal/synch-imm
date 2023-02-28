@@ -1,7 +1,5 @@
 /* 
     NavBar StyleSheet
-
-    why doesn't toggler nav work?
 */
 
 .toggler-nav {
@@ -16,4 +14,17 @@
 .fixed {
     position: sticky;
     top: 0;
+}
+
+/*
+    Work on shrinking navbar
+*/
+
+.h-nav-sm {
+}
+
+.h-nav-lg {
+}
+
+.logo-container {
 }
