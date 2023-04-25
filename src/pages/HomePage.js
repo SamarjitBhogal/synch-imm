@@ -5,21 +5,24 @@ import "../styles/homePageStyles.css";
 export default function HomePage() {
   return (
     <div className="container d-flex justify-content-center align-items-center flex-column mb-3">
-      <div className="container" style={{  }}>
+        {/* blurred background img:
         <img
-          src={require("../images/placeholder-center-img.jpg")}
+          src={require("../images/home-img.jpg")}
           alt="main"
-          style={{
-            maxWidth: "100%",
-          }}
+          className="home-img-blurred"
+        ></img> */}
+        <img
+          src={require("../images/home-img.jpg")}
+          alt="main"
+          className="home-img"
         ></img>
+        {/* This is a popup logo banner */}
         {/* <div className="sych-bg-c img-staple">
           <h1 className="header-font">LEGAL EXPERTISE YOU CAN RELY ON</h1>
           <button className="img-button" type="button" href="#">
             <span>Half off consultations!</span>
           </button>
         </div> */}
-      </div>
 
       <div className="container d-flex justify-content-center align-items-center flex-column mt-5">
         <h1 className="mb-5 header-font">About Us</h1>

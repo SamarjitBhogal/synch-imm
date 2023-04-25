@@ -47,6 +47,19 @@
     font-weight: 700;
 }
 
-.home-img {
+/* .home-img-blurred {
+    position: absolute;
+    width: 100%;
+    height: 919.45px;
+    top: 166px;
+    filter: blur(5px);
+    transform: scale(1);
+} */
 
+.home-img {
+    /* position: relative; */
+    width: 120%;
+    height: 919.45px;
+    top: 0;
+    left: 0;
 }
