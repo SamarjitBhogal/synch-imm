@@ -11,20 +11,11 @@
     width: 150px;
 }
 
+.synch-logo-size-sm {
+    width: 100px;
+}
+
 .fixed {
     position: sticky;
     top: 0;
-}
-
-/*
-    Work on shrinking navbar
-*/
-
-.h-nav-sm {
-}
-
-.h-nav-lg {
-}
-
-.logo-container {
 }
