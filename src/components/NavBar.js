@@ -6,7 +6,7 @@ import "../styles/navBarStyles.css";
 export default function NavBar() {
   window.addEventListener("resize", onResize);
   //TODO: onscroll for navbar resize
-  window.addEventListener("scroll", onScroll)
+  //window.addEventListener("scroll", onScroll)
 
   const [logo, setLogo] = useState(true);
   const [nav, setNav] = useState(true);
@@ -22,20 +22,20 @@ export default function NavBar() {
   }
 
   //onscroll for navbar resize
-  function onScroll() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      document.getElementById("logo").style.width = "100px";
-    } else {
-      document.getElementById("logo").style.width = "150px";
-    }
-  }
+  // function onScroll() {
+  //   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  //     document.getElementById("logo").style.width = "100px";
+  //   } else {
+  //     document.getElementById("logo").style.width = "150px";
+  //   }
+  // }
 
   useEffect(() => {
     onResize();
   }, []);
 
   return (
-    <div className="transparent-w fixed">
+    <div className="synch-nav fixed">
       {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">

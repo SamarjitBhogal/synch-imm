@@ -2,6 +2,12 @@
     NavBar StyleSheet
 */
 
+/* white transparent background */
+.synch-nav {
+    background-color: rgba(255, 255, 255, 0.92);
+    width: 100vw;
+  }
+
 .toggler-nav {
     outline: none;
     border: none;
