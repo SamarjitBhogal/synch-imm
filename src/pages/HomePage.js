@@ -4,7 +4,7 @@ import "../styles/homePageStyles.css";
 
 export default function HomePage() {
   return (
-    <div className="container d-flex justify-content-center align-items-center flex-column mb-3">
+    <div className="d-flex align-items-center flex-column mb-3">
         {/* blurred background img:
         <img
           src={require("../images/home-img.jpg")}

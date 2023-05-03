@@ -35,7 +35,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="synch-nav fixed">
+    <div className="synch-nav sticky-top">
       {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
@@ -54,7 +54,7 @@ export default function NavBar() {
             {logo && (
               <Link to="/">
                 <img
-                  className="synch-logo-size"
+                  className="synch-logo-size-sm"
                   src={require("../images/company-logo.jpg")}
                   alt="logo"
                   id="logo"
@@ -91,10 +91,10 @@ export default function NavBar() {
 
             {!logo && !nav && (
               <div
-                className="collapse navbar-collapse fs-5 justify-content-between"
+                className="d-flex collapse navbar-collapse fs-5 justify-content-between"
                 id="navbarNav"
               >
-                <ul className="navbar-nav">
+                <ul className="navbar-nav box">
                   <li className="nav-item m-2">
                     <NavLink to="/" className="nav-link">
                       <p>HOME</p>
@@ -106,7 +106,7 @@ export default function NavBar() {
                     </NavLink>
                   </li>
                 </ul>
-                <ul className="navbar-nav">
+                <ul className="navbar-nav box">
                   <li>
                     <Link to="/">
                       <img
@@ -117,7 +117,7 @@ export default function NavBar() {
                     </Link>
                   </li>
                 </ul>
-                <ul className="navbar-nav">
+                <ul className="navbar-nav box">
                   <li className="nav-item m-2">
                     <NavLink to="/contact" className="nav-link">
                       <p>CONTACT US</p>
