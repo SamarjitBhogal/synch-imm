@@ -40,7 +40,8 @@ export default function NavBar() {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
             <button
-              className="navbar-toggler toggler-nav"
+              className="btn navbar-toggler toggler-nav"
+              style={{ outline: "none" }}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"

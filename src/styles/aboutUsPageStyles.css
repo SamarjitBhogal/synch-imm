@@ -1,0 +1,15 @@
+/* AboutUs Page StyleSheet */
+
+.info-panel {
+    display: table;
+}
+
+.ab-local-text-space {
+    width: 35%;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
