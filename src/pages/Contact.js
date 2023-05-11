@@ -4,7 +4,7 @@ import "../styles/contactStyles.css";
 
 export default function Contact() {
   return (
-    <div className="card container align-items-center mt-4 w-50">
+    <div className="w-75 card container align-items-center mt-4">
       <h1 className="mt-4 mb-5 header-font">Contact Us</h1>
       <div className="form-floating mb-3 w-100">
         <input
@@ -39,7 +39,7 @@ export default function Contact() {
         ></textarea>
         <label for="floatingTextarea2">Comments</label>
       </div>
-      <button className="w-25 mb-4 submit-btn sych-bg-c" type="submit">
+      <button className="mb-4 submit-btn sych-bg-c" type="submit">
         SEND MESSAGE
       </button>
     </div>
