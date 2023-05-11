@@ -30,7 +30,7 @@ export default function AboutUs() {
           </span>
         </p>
       </div>
-      <h1 className="header-font">OUR TEAM</h1>
+      <h1 className="header-font mt-5">OUR TEAM</h1>
       <div className="d-flex justify-content-around mt-5">
         <h5 className="mb-2 local-text-font box">PRIYA BHOGAL, RCIC</h5>
         <h5 className="mb-2 local-text-font box">
