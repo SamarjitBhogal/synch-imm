@@ -47,25 +47,15 @@ export default function Contact() {
         <div className="text-center">
           <h5 className="synch-font">Hours Of Operation</h5>
           <p className="sm-text">
-            <span>Mon 09:00 a.m.- 05:00 p.m.</span>
-          </p>
-          <p className="sm-text">
-            <span>Tues 09:00 a.m.- 05:00 p.m.</span>
-          </p>
-          <p className="sm-text">
-            <span>Wed 09:00 a.m.- 05:00 p.m.</span>
-          </p>
-          <p className="sm-text">
-            <span>Thu 09:00 a.m.- 05:00 p.m.</span>
-          </p>
-          <p className="sm-text">
-            <span>Fri 09:00 a.m.- 05:00 p.m.</span>
-          </p>
-          <p className="sm-text">
-            <span>Closed</span>
-          </p>
-          <p className="sm-text">
-            <span>Closed</span>
+            <span>
+              Mon 09:00 a.m.- 05:00 p.m. <br></br>
+              Tues 09:00 a.m.- 05:00 p.m. <br></br>
+              Wed 09:00 a.m.- 05:00 p.m. <br></br>
+              Thu 09:00 a.m.- 05:00 p.m. <br></br>
+              Fri 09:00 a.m.- 05:00 p.m. <br></br>
+              Closed <br></br>
+              Closed <br></br>
+            </span>
           </p>
         </div>
         <div className="text-center">
@@ -74,7 +64,12 @@ export default function Contact() {
             <span>synchronizedimmigration@gmail.com</span>
           </p>
           <p className="sm-text">
-            <span>(604)-999-9999</span>
+            <span>
+              8047-120th Street, <br></br>
+              Unit# 140 Delta, B.C., <br></br>
+              V4C 6P7 Phone: (604) 594-7505 <br></br>
+              Fax: (604) 590-8244 <br></br>
+            </span>
           </p>
         </div>
       </div>

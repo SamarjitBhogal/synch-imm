@@ -1,38 +1,16 @@
-import React, {useRef, useEffect, useState} from "react";
+import React from "react";
 
 import "../styles/homePageStyles.css";
 
 export default function HomePage() {
-  // const homeImg = useRef();
-  // const [height, setHeight] = useState(0);
-
-  // useEffect(() => {
-  //   if (!homeImg.current.clientHeight) return;
-  //   setHeight(homeImg.current.clientHeight);
-  // }, [homeImg.current.clientHeight]
-  // );
   return (
     <div className="d-flex align-items-center flex-column mb-3">
-        {/* <img
-          src={require("../images/home-img.jpg")}
-          alt="main"
-          className="home-img-blurred"
-          id="blurred-img"
-        ></img> */}
         <img
           src={require("../images/home-img.jpg")}
           alt="main"
           className="home-img"
           id="home-img"
         ></img>
-        {/* This is a popup logo banner */}
-        {/* <div className="sych-bg-c img-staple">
-          <h1 className="header-font">LEGAL EXPERTISE YOU CAN RELY ON</h1>
-          <button className="img-button" type="button" href="#">
-            <span>Half off consultations!</span>
-          </button>
-        </div> */}
-
       <div className="container d-flex justify-content-center align-items-center flex-column mt-5">
         <h1 className="mb-5 header-font">About Us</h1>
         <h5 className="mb-2 local-text-font">LAW YOU CAN UNDERSTAND</h5>

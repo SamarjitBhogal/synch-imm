@@ -5,11 +5,10 @@ import "../styles/navBarStyles.css";
 
 export default function NavBar() {
   window.addEventListener("resize", onResize);
-  //TODO: onscroll for navbar resize
-  //window.addEventListener("scroll", onScroll)
+  window.addEventListener("scroll", onScroll);
 
-  const [logo, setLogo] = useState(true);
-  const [nav, setNav] = useState(true);
+  const [logo, setLogo] = useState(false);
+  const [nav, setNav] = useState(false);
 
   function onResize() {
     if (window.innerWidth <= 992) {
@@ -21,14 +20,24 @@ export default function NavBar() {
     }
   }
 
-  //onscroll for navbar resize
-  // function onScroll() {
-  //   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-  //     document.getElementById("logo").style.width = "100px";
-  //   } else {
-  //     document.getElementById("logo").style.width = "150px";
-  //   }
-  // }
+  // Uncaught type error being thrown
+  function onScroll() {
+    if (window.scrollY === 0) {
+      if (!logo && !nav) {
+        document.getElementById("logo").style.maxWidth = "150px";
+      } 
+      if (logo && nav) {
+        document.getElementById("logo-sm").style.maxWidth = "100px";
+      }
+    } else {
+      if (!logo && !nav) {
+        document.getElementById("logo").style.maxWidth = "80px";
+      } 
+      if (logo && nav) {
+        document.getElementById("logo-sm").style.maxWidth = "80px";
+      }
+    }
+  }
 
   useEffect(() => {
     onResize();
@@ -36,8 +45,7 @@ export default function NavBar() {
 
   return (
     <div className="synch-nav sticky-top">
-      {
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
             <button
               className="btn navbar-toggler toggler-nav"
@@ -58,7 +66,7 @@ export default function NavBar() {
                   className="synch-logo-size-sm"
                   src={require("../images/company-logo.jpg")}
                   alt="logo"
-                  id="logo"
+                  id="logo-sm"
                 ></img>
               </Link>
             )}
@@ -82,7 +90,7 @@ export default function NavBar() {
                     </NavLink>
                   </li>
                   <li className="nav-item mb-2">
-                    <NavLink to="/service" className="nav-link">
+                    <NavLink to="/services" className="nav-link">
                       <p>SERVICES</p>
                     </NavLink>
                   </li>
@@ -114,6 +122,7 @@ export default function NavBar() {
                         className="synch-logo-size"
                         src={require("../images/company-logo.jpg")}
                         alt="logo"
+                        id="logo"
                       ></img>
                     </Link>
                   </li>
@@ -125,7 +134,7 @@ export default function NavBar() {
                     </NavLink>
                   </li>
                   <li className="nav-item m-2">
-                    <NavLink to="/service" className="nav-link">
+                    <NavLink to="/services" className="nav-link">
                       <p>SERVICES</p>
                     </NavLink>
                   </li>
@@ -134,7 +143,6 @@ export default function NavBar() {
             )}
           </div>
         </nav>
-      }
     </div>
   );
 }

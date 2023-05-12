@@ -11,7 +11,6 @@ import Forms from "./pages/Forms";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 
-import Layout from './components/layout'; //TODO: Make a cohearent layout
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 

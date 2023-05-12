@@ -9,16 +9,22 @@
   }
 
 .toggler-nav {
-    outline: none;
-    border: none;
+    outline: none !important;
+    border: none !important;
 }
 
 .synch-logo-size {
-    width: 150px;
+    max-width: 150px;
+    flex: 1;
+
+    transition: 0.3s;
 }
 
 .synch-logo-size-sm {
-    width: 100px;
+    max-width: 100px;
+    flex: 1;
+
+    transition: 0.3s;
 }
 
 .box {
