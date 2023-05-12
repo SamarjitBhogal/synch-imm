@@ -61,3 +61,7 @@ code {
   letter-spacing: normal;
   text-align: center;
 }
+
+.synch-font {
+  font-family: "Source Sans Pro", arial, sans-serif;
+}

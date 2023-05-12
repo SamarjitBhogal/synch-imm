@@ -42,6 +42,42 @@ export default function Contact() {
       <button className="mb-4 submit-btn sych-bg-c" type="submit">
         SEND MESSAGE
       </button>
+      <h4 className="synch-font">SYNCHRONIZED IMMIGRATION CORP.</h4>
+      <div className="container d-flex justify-content-evenly mt-3 mb-3">
+        <div className="text-center">
+          <h5 className="synch-font">Hours Of Operation</h5>
+          <p className="sm-text">
+            <span>Mon 09:00 a.m.- 05:00 p.m.</span>
+          </p>
+          <p className="sm-text">
+            <span>Tues 09:00 a.m.- 05:00 p.m.</span>
+          </p>
+          <p className="sm-text">
+            <span>Wed 09:00 a.m.- 05:00 p.m.</span>
+          </p>
+          <p className="sm-text">
+            <span>Thu 09:00 a.m.- 05:00 p.m.</span>
+          </p>
+          <p className="sm-text">
+            <span>Fri 09:00 a.m.- 05:00 p.m.</span>
+          </p>
+          <p className="sm-text">
+            <span>Closed</span>
+          </p>
+          <p className="sm-text">
+            <span>Closed</span>
+          </p>
+        </div>
+        <div className="text-center">
+          <h5 className="synch-font">Email and Phone</h5>
+          <p className="sm-text">
+            <span>synchronizedimmigration@gmail.com</span>
+          </p>
+          <p className="sm-text">
+            <span>(604)-999-9999</span>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
