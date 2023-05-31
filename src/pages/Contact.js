@@ -48,21 +48,21 @@ export default function Contact() {
           <h5 className="synch-font">Hours Of Operation</h5>
           <p className="sm-text">
             <span>
-              Mon 09:00 a.m.- 05:00 p.m. <br></br>
-              Tues 09:00 a.m.- 05:00 p.m. <br></br>
-              Wed 09:00 a.m.- 05:00 p.m. <br></br>
-              Thu 09:00 a.m.- 05:00 p.m. <br></br>
-              Fri 09:00 a.m.- 05:00 p.m. <br></br>
-              Closed <br></br>
-              Closed <br></br>
+              Mon 09:00 a.m. - 05:00 p.m. <br></br>
+              Tues 09:00 a.m. - 05:00 p.m. <br></br>
+              Wed 09:00 a.m. - 05:00 p.m. <br></br>
+              Thu 09:00 a.m. - 05:00 p.m. <br></br>
+              Fri 09:00 a.m. - 05:00 p.m. <br></br>
+              Sat - Closed <br></br>
+              Sun - Closed <br></br>
             </span>
           </p>
         </div>
         <div className="text-center">
           <h5 className="synch-font">Email and Phone</h5>
-          <p className="sm-text">
-            <span>synchronizedimmigration@gmail.com</span>
-          </p>
+          <a className="sm-text hyper-link" href="mailto: synchronizedimmigration@gmail.com">
+            synchronizedimmigration@gmail.com
+          </a>
           <p className="sm-text">
             <span>
               8047-120th Street, <br></br>
