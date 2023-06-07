@@ -25,7 +25,11 @@ code {
 
 /* company background color */
 .sych-bg-c {
-  background-color: #9D918E;
+  background-color: rgb(158, 157, 153);
+}
+
+.main-bg-c {
+  background-color: rgb(51, 51, 51);
 }
 
 .footer {
@@ -74,8 +78,4 @@ code {
 
   letter-spacing: normal;
   text-align: center;
-}
-
-.synch-font {
-  font-family: "Source Sans Pro", arial, sans-serif;
 }

@@ -4,7 +4,7 @@
 
 /* white transparent background */
 .synch-nav {
-    background-color: rgba(255, 255, 255, 0.92);
+    background-color: rgb(158, 157, 153);
     width: 100vw;
   }
 
@@ -16,6 +16,7 @@
 .synch-logo-size {
     max-width: 150px;
     flex: 1;
+    visibility: hidden;
 
     transition: 0.3s;
 }
@@ -23,6 +24,7 @@
 .synch-logo-size-sm {
     max-width: 100px;
     flex: 1;
+    visibility: hidden;
 
     transition: 0.3s;
 }
