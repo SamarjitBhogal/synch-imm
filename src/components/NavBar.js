@@ -104,6 +104,18 @@ export default function NavBar() {
                 id="navbarNav"
               >
                 <ul className="navbar-nav box">
+                  <li className="nav-item m-2">
+                    <NavLink to="/" className="nav-link">
+                      <p>HOME</p>
+                    </NavLink>
+                  </li>
+                  <li className="nav-item m-2">
+                    <NavLink to="/about" className="nav-link">
+                      <p>ABOUT US</p>
+                    </NavLink>
+                  </li>
+                </ul>
+                <ul className="navbar-nav box">
                   <li>
                     <Link to="/">
                       <img
@@ -116,16 +128,6 @@ export default function NavBar() {
                   </li>
                 </ul>
                 <ul className="navbar-nav box">
-                  <li className="nav-item m-2">
-                    <NavLink to="/" className="nav-link">
-                      <p>HOME</p>
-                    </NavLink>
-                  </li>
-                  <li className="nav-item m-2">
-                    <NavLink to="/about" className="nav-link">
-                      <p>ABOUT US</p>
-                    </NavLink>
-                  </li>
                   <li className="nav-item m-2">
                     <NavLink to="/contact" className="nav-link">
                       <p>CONTACT US</p>

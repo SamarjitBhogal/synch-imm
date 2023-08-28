@@ -4,21 +4,13 @@ import "../styles/homePageStyles.css";
 
 export default function HomePage() {
   return (
-    <div className="d-flex align-items-center flex-column main-bg-c">
-      <img
-        data-ux="Image"
-        src="//img1.wsimg.com/isteam/ip/5ddd9726-2eed-439b-9d1b-a29651afc1b2/LOGO%20WEBSITE.png/:/"
-        data-ht="Fit"
-        data-aid="BACKGROUND_IMAGE_RENDERED"
-        class="logo-img"
-        alt="logo"
-      ></img>
-      {/* <img
-        src={require("../images/home-img.jpg")}
-        alt="main"
-        className="home-img"
-        id="home-img"
-      ></img> */}
+    <div className="d-flex align-items-center flex-column mb-3">
+        <img
+          src={require("../images/home-img.jpg")}
+          alt="main"
+          className="home-img"
+          id="home-img"
+        ></img>
       <div className="container d-flex justify-content-center align-items-center flex-column mt-5">
         <h1 className="mb-5 header-font">About Us</h1>
         <h5 className="mb-2 local-text-font">LAW YOU CAN UNDERSTAND</h5>

@@ -42,7 +42,7 @@ export default function Contact() {
       <button className="mb-4 submit-btn sych-bg-c" type="submit">
         SEND MESSAGE
       </button>
-      <h4 className="synch-font">Rise Notary Group</h4>
+      <h4 className="synch-font">SYNCHRONIZED IMMIGRATION CORP.</h4>
       <div className="container d-flex justify-content-evenly">
         <h5 className="synch-font box">Hours Of Operation</h5>
         <h5 className="synch-font box">Location</h5>
@@ -80,13 +80,13 @@ export default function Contact() {
               className="sm-text hyper-link"
               href="mailto: synchronizedimmigration@gmail.com"
             >
-              info@risenotarygroup.ca
+              synchronizedimmigration@gmail.com
             </a>{" "}
             <br></br>
             <span>
               8047-120th Street, <br></br>
-              Unit# 100 Delta, B.C., <br></br>
-              V4C 0E1 Phone: (604) 594-7505 <br></br>
+              Unit# 140 Delta, B.C., <br></br>
+              V4C 6P7 Phone: (604) 594-7505 <br></br>
               Fax: (604) 590-8244 <br></br>
             </span>
           </p>

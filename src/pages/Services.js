@@ -63,7 +63,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="text-center">
+      <div className="flex-column justify-content-center">
         <div class="collapse" id="realEstate">
           <div class="card card-body">
             Some placeholder content for the collapse component. This panel is
